@@ -22,7 +22,7 @@ import java.io.IOException;
  */
 public class Utility {
 
-    public static final String SERVER_IP = "10.17.9.15"; // Constante del host
+    public static final String SERVER_IP = "192.x.x.x"; // Constante del host
     public static final int SERVER_PORT = 3000; // Constante del puerto
 
     public static SocketService socketService; // Variable del servicio para crear solicitudes en diferentes actividades
