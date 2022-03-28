@@ -222,7 +222,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             String[] response = intent.getExtras().getStringArray("data_chn");
 
             if (response != null) {
-                if (!Arrays.toString(response).isEmpty() && refreshIsActive && response.length == 3) { // Nos aseguramos que el estado del metodo de refresco pare el proceso y que la respuesta no este vacia
+                if (!Arrays.toString(response).isEmpty() && refreshIsActive) { // Nos aseguramos que el estado del metodo de refresco pare el proceso y que la respuesta no este vacia
                     AppRepository.getInstance().saveChannels(response); // Asignamos los canales a el repositorio
                     channelAdapter.setChannels(AppRepository.getInstance().getChannels()); // Asignamos los canales al adaptador de ellos
                 }

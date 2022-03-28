@@ -36,8 +36,10 @@ public class AppRepository {
         for (String s : channels) { // Recorremos canal por canal de la lista de canales proporcionada por el servidor
             String[] channel = s.split(","); // Cortamos los datos del canal por comas
 
-            if (!mapChannel.containsKey(channel[1])) { // Manejamos que el nombre del canal no exista en la aplicacion
-                mapChannel.put(channel[1], new Channel(channel[1])); // Guardamos el nuevo canal
+            if (channel.length == 3 ){
+                if (!mapChannel.containsKey(channel[1])) { // Manejamos que el nombre del canal no exista en la aplicacion
+                    mapChannel.put(channel[1], new Channel(channel[1])); // Guardamos el nuevo canal
+                }
             }
         }
     }
