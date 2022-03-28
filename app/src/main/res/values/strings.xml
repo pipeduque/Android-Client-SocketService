@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Client</string>
+    <string name="save_action">Guardar</string>
+    <string name="name_channel">Nombre del nuevo canal</string>
+    <string name="hint_msg">Enviar mensaje</string>
+
+    <!-- Dialog new channel errors -->
+    <string name="error_isEmpty">Este campo es obligatorio</string>
+    <string name="tittle_home">Canales</string>
+    
+    <string name="navigation_drawer_open">Ver usuarios conectador</string>
+    <string name="navigation_drawer_close">Dejar de ver usuarios conectados</string>
+</resources>
